@@ -1,0 +1,76 @@
+{
+  "name": "bom-weather-transform",
+  "version": "0.0.1",
+  "description": "Transforms for the bom-weather package.",
+  "main": "dist/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "babel src -d dist",
+    "style": "./node_modules/.bin/eslint ./src ./test",
+    "test": "jest",
+    "cov": "jest --coverage",
+    "validate": "npm run style && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjdavey/bom-weather-transform.git"
+  },
+  "keywords": [
+    "bom-weather"
+  ],
+  "author": "Tristan Davey <tristan@tristandavey.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tjdavey/bom-weather-transform/issues"
+  },
+  "homepage": "https://github.com/tjdavey/bom-weather-transform#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-eslint": "^7.1.1",
+    "babel-jest": "^18.0.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-register": "^6.18.0",
+    "eslint": "^3.12.2",
+    "eslint-config-defaults": "^9.0.0",
+    "jasmine-expect": "^3.6.0",
+    "jest": "^18.1.0"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": "defaults",
+    "rules": {}
+  },
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/dist/",
+      "<rootDir>/test/"
+    ],
+    "coverageReporters" : [
+      "html"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 95,
+        "functions": 95,
+        "lines": 95,
+        "statements": 95
+      }
+    },
+    "unmockedModulePathPatterns": [
+      "jasmine-expect"
+    ]
+  },
+  "dependencies": {
+    "joi": "^10.2.2",
+    "lodash": "^4.17.4",
+    "moment": "^2.17.1"
+  }
+}
