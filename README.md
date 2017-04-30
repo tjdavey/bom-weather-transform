@@ -1,6 +1,7 @@
 # bom-weather-transform
 
 [![Build Status](https://travis-ci.org/tjdavey/bom-weather-transform.svg?branch=master)](https://travis-ci.org/tjdavey/bom-weather-transform)
+[![codecov](https://codecov.io/gh/tjdavey/bom-weather-transform/branch/master/graph/badge.svg)](https://codecov.io/gh/tjdavey/bom-weather-transform)
 
 A set of output transforms for the [bom-weather](https://github.com/tjdavey/bom-weather) module to provide useful native javascript representations of Australian Bureau of Meteorology data. This library normalises data, removing superfluous structures, converting dates and times appropriately.
 
