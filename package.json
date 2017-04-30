@@ -49,12 +49,11 @@
     "rules": {}
   },
   "jest": {
+    "collectCoverage": true,
+    "coverageDirectory": "./coverage/",
     "coveragePathIgnorePatterns": [
       "<rootDir>/dist/",
       "<rootDir>/test/"
-    ],
-    "coverageReporters" : [
-      "html"
     ],
     "coverageThreshold": {
       "global": {
