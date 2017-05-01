@@ -1,6 +1,6 @@
 {
   "name": "bom-weather-transform",
-  "version": "0.0.1",
+  "version": "1.0.0-alpha",
   "description": "Transforms for the bom-weather package.",
   "main": "dist/index.js",
   "directories": {
